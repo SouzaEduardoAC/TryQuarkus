@@ -1,0 +1,9 @@
+mvn io.quarkus:quarkus-maven-plugin:1.5.0.Final:create \
+    -DprojectGroupId=org.acme \
+    -DprojectArtifactId=try-quarkus \
+    -DclassName="org.acme.getting.started.GreetingResource" \
+    -Dpath="/hello"
+
+change directory to the project : cd <project dir>
+
+mvn complie quarkus:dev
