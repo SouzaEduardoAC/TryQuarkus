@@ -17,8 +17,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/greeting/{name}")
-    public String greetings(@PathParam String name)
-    {
+    public String greetings(@PathParam String name) {
         return service.greeting(name);
     }
 
