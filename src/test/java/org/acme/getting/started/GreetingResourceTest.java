@@ -17,14 +17,4 @@ public class GreetingResourceTest {
                 .body(is("hello"));
     }
 
-    @Test
-    public void testGreetingEndpoint() {
-        given()
-            .pathParam("name", "quarkus")
-            .when().get("/hello/greeting/{name  }")
-            .then()
-                .statusCode(200)
-                .body(is("hello quarkus"));
-    }
-
 }
