@@ -7,6 +7,7 @@ import java.util.List;
 
 @Entity
 public class Fruit extends PanacheEntity {
+
     public String name;
 
     public String season;
